@@ -1,0 +1,12 @@
+groups:
+- name: alert.rules
+  rules:
+  - alert: someTestAlert
+    expr: disk_usage > 50
+    for: 10s
+    labels:
+      severity: "critical"
+    annotations:
+      summary: "Hello my firts alert"
+      description: "i have no idea"
+
